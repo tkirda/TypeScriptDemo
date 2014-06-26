@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "TypeScript Demo";
+    Layout = "/Views/Shared/BaseLayout.cshtml";
+}
+
+<h1>To Do List</h1>
+<div id="ko">
+    <div>
+        <input type="text" class="text" data-bind="value: item().name" placeholder="Type TODO..." />
+        <input type="button" value="Add" data-bind="click: add" />
+    </div>
+
+    <div data-bind="visible: list().length" class="actions">
+        <div>
+            <a data-bind="click: completeAll">Complete All</a>
+        </div>
+    </div>
+        
+    <div data-bind="foreach: list">
+        <div class="list-item">
+            <input type="checkbox" data-bind="checked: completed" />
+            <strong data-bind="text: name, css: { completed: completed }"></strong>
+            <div>
+                <a class="remove" href="#" data-bind="click: $root.remove.bind($root)">remove</a>
+            </div>
+        </div>
+    </div>
+    
+    <div data-bind="visible: list().length" class="actions">
+        <div>
+            <a data-bind="click: removeCompletedItems">Remove completed items</a>
+        </div>
+    </div>
+</div>

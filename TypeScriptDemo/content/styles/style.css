@@ -1,0 +1,41 @@
+﻿body {
+    font-family: sans-serif;
+    padding: 10px;
+    margin: 0;
+}
+
+#content {
+    width: 600px;
+    margin: 20px auto;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+a {
+    color: blue;
+    cursor: pointer;
+}
+
+.list-item {
+    padding: 10px;
+    position: relative;
+    background: #d5fed5;
+    margin: 1px;
+}
+
+.remove {
+    font-size: 11px;
+    padding-left: 20px;
+}
+
+.text {
+    padding: 10px;
+    font-size: 20px;
+    width: 90%;
+}
+
+.actions {
+    padding: 10px 0;
+}
