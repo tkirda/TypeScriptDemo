@@ -151,7 +151,9 @@
     <TypeScriptCompile Include="scripts\definitions\jquery.d.ts" />
     <TypeScriptCompile Include="scripts\definitions\knockout.d.ts" />
     <TypeScriptCompile Include="scripts\definitions\require.d.ts" />
+    <TypeScriptCompile Include="scripts\main.ts" />
     <TypeScriptCompile Include="scripts\modules\toDoItem.ts" />
+    <TypeScriptCompile Include="scripts\modules\toDoList.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
