@@ -122,6 +122,9 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="content\styles\style.css" />
     <Content Include="Global.asax" />
+    <Content Include="scripts\libs\jquery-2.1.0.min.js" />
+    <Content Include="scripts\libs\knockout-3.0.0.js" />
+    <Content Include="scripts\libs\require.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -142,6 +145,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\BaseLayout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="scripts\definitions\interfaces.d.ts" />
+    <TypeScriptCompile Include="scripts\definitions\jquery.d.ts" />
+    <TypeScriptCompile Include="scripts\definitions\knockout.d.ts" />
+    <TypeScriptCompile Include="scripts\definitions\require.d.ts" />
+    <TypeScriptCompile Include="scripts\modules\toDoItem.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
